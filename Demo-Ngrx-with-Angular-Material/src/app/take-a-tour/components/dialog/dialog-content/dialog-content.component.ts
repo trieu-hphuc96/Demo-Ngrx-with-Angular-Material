@@ -34,8 +34,6 @@ export class DialogContentComponent implements OnInit {
   nextStep(){
     this.currentStep = this.data[this.currentStep.index + 1]
     if(this.currentStep.index === this.data.length - 1) this.isLastStep = true;
-    console.log(this.currentStep.index)
-    console.log(this.data.length)
     this.isFirstStep = false;
   }
 
