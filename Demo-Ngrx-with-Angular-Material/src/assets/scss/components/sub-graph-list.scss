@@ -1,0 +1,17 @@
+.sub-graph-list {
+    width: 500px;
+    padding: 9px;
+    background: #f6f6f6;
+    &__item {
+        padding: 6px 15px;
+        background: #fff;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-color: #ccc;
+        &.list-group-item {
+            background-color: #fff;
+        }
+    }
+}

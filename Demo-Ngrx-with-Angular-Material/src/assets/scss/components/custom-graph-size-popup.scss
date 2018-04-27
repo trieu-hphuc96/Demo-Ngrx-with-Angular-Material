@@ -1,0 +1,89 @@
+﻿.custom-graph-size-popup {
+    height: 100%;
+
+    &__layout {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    &__form {
+        padding-left: 20px;
+    }
+    &__label {
+        text-align: left!important;
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+
+    .modal-body {
+        padding-right: 15px;
+    }
+
+    .chart-container,
+    .main-chart {
+        max-height: 180px !important;
+        min-height: 180px !important;
+    }
+
+    .custom-topic-grid-col {
+        min-height: 300px;
+    }
+
+    .custom-topic-grid-col--sub-topic {
+        min-height: 200px;
+    }
+
+    .master-chart {
+        display: none !important;
+    }
+
+    .tm-campaign {
+        display: none;
+    }
+
+    .padding-list-icon {
+        display: none;
+    }
+
+    .tm-chart-wrapper {
+        margin-top: 0;
+    }
+
+    .custom-topic-grid-col__graph-title {
+        &--sub-topic {
+            font-size: 30px;
+        }
+        cursor: auto;
+    }
+
+    .sortable-placeholder {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(215, 233, 245);
+        border: 2px dashed rgb(175, 217, 245);
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+    }
+
+}
+
+.custom-topic-grid-modal {
+    overflow: hidden !important;
+    
+    .modal-dialog {
+        width: 85%;
+        height: 90%;
+    }
+
+    .modal-content {
+        height: 100%;
+    }
+    
+    .modal-body {
+        height: calc(100% - 120px);
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,153 @@
+.header-controls {
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    z-index: 11;
+    background: #f0f0f0;
+    &__toggle-header-button {
+        border: 1px solid #c7c7c7;
+        padding: 0 5px;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-top: 10px;
+        height: 30px;
+        width: 40px;
+        text-align: center;
+        font-size: 17pt;
+        font-weight: bold;
+        background: #e7e7e7;
+        border-radius: 4px;
+        color: #555;
+        &:hover {
+            background: #d7d7d7;
+        }
+    }
+    &__edit-new-chart {
+        .dropdown-menu {
+            min-width: 105px;
+            left: auto;
+            -ms-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            width: 105px;
+            top: 43px;
+            right: 69px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            &>li>a {
+                text-transform: capitalize;
+                padding-left: 8px;
+            }
+        }
+    }
+    &__btn-dropdown-toggle {
+        position: relative;
+        width: 95px;
+        font-size: 14px;
+        -ms-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        border: 1px solid white;
+        padding: 5px 16px;
+        cursor: pointer;
+        float: right;
+        margin-right: 20px;
+        margin-top: 9px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+        .btn {
+            font-size: 12px;
+        }
+    }
+}
+
+.header-time-buttons-group {
+    margin-left: 24px;
+    margin-right: 10px;
+    &__button-time {
+        border-radius: 0;
+        background-color: #F0F0F0;
+        border: 0;
+        border-bottom: 0;
+        padding: 14px 12px;
+        display: inline-block;
+        font-weight: normal;
+        vertical-align: middle;
+        cursor: pointer;
+        font-size: 14px;
+        &:hover,
+        &:focus,
+        &.active {
+            background-color: #fff;
+        }
+        &.active-date {
+            background: #fff !important;
+            color: #000 !important;
+        }
+        @media screen and (min-width: 768px) {
+            height: 50px;
+        }
+        @media screen and (max-width: 861px) {
+            padding: 3px;
+        }
+        @media screen and (max-width: 1100px) {
+            padding: 14px 5px 5px;
+        }
+    }
+}
+
+.header-time-period {
+    margin-top: 6px;
+    span {
+        margin-top: 7px;
+    }
+    &__spacing {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    @media screen and (max-width: 1100px) {
+        span {
+            margin-top: 7px;
+            padding: 0;
+        }
+    }
+}
+
+.icon-header {
+    margin-right: 38px;
+    margin-top: 10px;
+    color: #9D9D9E;
+    font-size: 1.6em;
+    .glyphicon {
+        color: #000 !important;
+        &[disabled] {
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    .fa-gear {
+        font-size: 25px;
+        position: relative;
+        top: 1px;
+    }
+    .glyphicon-fullscreen {
+        font-size: 18px;
+        position: relative;
+        top: 2px;
+    }
+    .glyphicon-filter {
+        font-size: 20px;
+    }
+    @media screen and (max-width: 1100px) {
+        margin-right: 20px;
+    }
+    @media screen and (max-width: 861px) {
+        margin-right: 18px;
+    }
+}

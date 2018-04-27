@@ -1,0 +1,267 @@
+.graph-header-info {
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    width: calc(100% - 350px);
+    &__content-wrapper {
+        border: 1px solid transparent;
+        padding-right: 10px;
+        position: relative;
+        margin-left: -2px;
+        &.edit-mode {
+            background: url(../images/right-bg.png);
+            background-repeat: repeat-y;
+            background-position: right;
+        }
+    }
+    &__content-title {
+        color: #000000;
+        font-size: 30px;
+        margin-top: 0;
+        margin-left: -3px;
+        line-height: 40px;
+        padding-left: 0;
+        margin-top: -15px;
+    }
+    &__glyphicon,
+    &__img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        margin-left: 0px;
+        margin-top: -5px;
+        border: 1px solid #e7e7e7;
+    }
+    &__glyphicon {
+        float: left;
+    }
+    &__title {
+        padding-left: 0;
+    }
+}
+
+.graph-tools-area {
+    margin-top: -10px;
+    width: 350px;
+    float: right;
+    &__comment-link {
+        float: right;
+        height: 20px;
+    }
+    &__comment-link-icon {
+        margin-top: 0;
+        margin-left: -21px;
+        width: 13px;
+        height: 16px;
+        cursor: pointer;
+        z-index: 2;
+        color: #f93;
+    }
+    .icon-comment-stand {
+        top: 0 !important;
+        position: relative;
+        left: 0 !important;
+    }
+    .fix-icon {
+        position: fixed;
+        z-index: 2;
+    }
+}
+
+.graph-comment {
+    position: static;
+    z-index: 5;
+    cursor: pointer;
+    text-align: right;
+    float: right;
+    margin-top: 5px;
+    button {
+        background-color: #999;
+        color: #FFF;
+        font-weight: bold;
+        border: 1px solid #CCC;
+        position: relative;
+        z-index: 999;
+    }
+    i,
+    b {
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    &__btn-show-box {
+        top: 22px !important;
+        padding: 3px 15px;
+        cursor: pointer;
+        position: static !important;
+    }
+}
+
+.graph-item {
+    padding: 0 0 0 0;
+    display: block;
+    .graph-item__options {
+        .options-section {
+            &__btn-show-options.glyphicon {
+                left: 15px;
+            }
+        }
+    }
+    &__options {
+        float: right;
+        margin-top: 5px;
+        margin-right: 15px;
+        .options-section {
+            position: static;
+            .options {
+                top: 60px;
+                right: 3vw;
+                &.dropdown-menu {
+                    right: 3vw;
+                }
+            }
+            &__btn-show-options.glyphicon {
+                top: 5px;
+            }
+        }
+    }
+    &__graph-nav {
+        float: right;
+        margin-right: 15px;
+        .graph-nav {
+            position: static;
+        }
+    }
+    &__des {
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+}
+
+.graph {
+    padding: 10px 15px 10px 26px;
+    margin: 0;
+    .chart-histogram {
+        padding: 7px 10px 30px 10px;
+    }
+    .graph__content {
+        span.btn-general,
+        span.btn-primary {
+            position: absolute;
+            top: 26px;
+            right: 0;
+            width: 65px;
+        }
+        .labelFileUpload {
+            position: inherit;
+            text-transform: lowercase;
+        }
+        .labelFileUpload:hover {
+            text-decoration: none;
+        }
+        input {
+            font-size: 16px;
+            padding-left: 5px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            padding-left: 5px;
+            margin-bottom: 10px;
+        }
+        .no-padding-span span {
+            padding-left: 0;
+        }
+    }
+    .view-mode-graph-options section {
+        position: static;
+        margin-top: -5px;
+    }
+}
+
+.export-ppt-graph .graph-header-info__content-title {
+    margin-left: 10px;
+}
+
+.chart {
+    &__empty-chart {
+        position: absolute;
+        z-index: 1;
+        width: 95%;
+        height: 500px;
+        background-color: white;
+        background: url('../images/newchart.PNG') no-repeat;
+    }
+    &__empty-chart-text {
+        position: absolute;
+        z-index: 2;
+        left: 100px;
+        bottom: 0;
+    }
+    &__master-chart {
+        position: relative;
+        height: 130px;
+        width: 100%;
+    }
+    .main-chart {
+        max-height: 450px;
+        margin-top: 10px;
+    }
+}
+
+.tags-chart {
+    &__main {
+        width: 4%;
+        margin-top: 3px;
+    }
+    &__info {
+        margin-left: 10px;
+        h4 {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+    }
+    &__campaign {
+        border-left: 1px solid #e7e7e7;
+        cursor: text;
+        width: 96%;
+    }
+    &__fs-tag {
+        border: 1px solid #CCCCCC;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
+        float: left;
+        margin-right: 5px;
+        padding: 3px 5px;
+        font-size: 11px;
+    }
+}
+
+.main-chart {
+    .series-filter-section {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media (max-width: 3200px) {
+            width: 100px;
+        }
+        @media (max-width: 1920px) {
+            width: 80px;
+        }
+        @media (max-width: 1600px) {
+            width: 60px;
+        }
+        @media (max-width: 992px) {
+            width: 40px;
+        }
+    }
+}
+
+.new-chart-area {
+    padding: 10px 15px 10px 26px;
+    .no-padding-span span {
+        padding-left: 0;
+    }
+}
+
+#view-detail-chart {
+    padding: 0;
+}

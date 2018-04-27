@@ -1,0 +1,32 @@
+﻿@mixin create-left-navigation($content-color, $content-icon-color) {
+    margin: 0 -15px !important;
+    display: inline-block !important;
+    cursor: pointer;
+    width: 50%;
+    &__item {
+        display: inline-block;
+        margin: 0 0 0 -1px;
+        line-height: 20px;
+        list-style-type: none;
+        &__content:hover {
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.3);
+            background-color: #292929;
+            color: #fff;
+        }
+        &__content {
+            background-color: transparent;
+            border: none;
+            padding: 14px 13px 10px;
+            display: block;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: $content-color;
+            line-height: 1.4285;
+            &__icon {
+                color: $content-icon-color;
+                font-size: 1.81em;
+            }
+        }
+    }
+}

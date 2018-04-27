@@ -1,0 +1,254 @@
+﻿.data-connections {
+    position: relative;
+
+    &__show-advanced-mode {
+        cursor: pointer;
+
+        span {
+            font-weight: normal;
+        }
+    }
+
+    &__message {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    &__spinner {
+        height: 160px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background: #fff;
+        z-index: 20;
+        margin-top: 25px;
+
+        img {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+        }
+    }
+
+    &__spinner--large {
+        height: 400px;
+    }
+
+    &__spinner--full {
+        height: 100%;
+    }
+
+    &__table-data {
+        padding-bottom: 15px;
+    }
+
+    .series-filter-section {
+        padding-left: 26px !important;
+    }
+
+    .td {
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    th {
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
+.time-nav {
+    &__period-time {
+        position: relative;
+        top: 2px;
+    }
+
+    &__btn {
+        font-size: 12px;
+    }
+}
+
+.correlation-table {
+    position: relative;
+    min-height: 160px;
+    margin-bottom: 40px;
+
+    &__column-header {
+        float: left;
+    }
+
+    &__space-cell {
+        width: 300px;
+        height: 60px;
+    }
+
+    &__cell {
+        height: 49px;
+        padding: 0 !important;
+        vertical-align: middle !important;
+        position: relative;
+    }
+
+    &__cell--point {
+        height: 48px;     
+    }
+
+    &__series-bullet {
+        float: left;
+    }
+
+    &__column-header-title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 10px;
+        display: block;
+    }
+
+    &__top-header {
+        width: 300px;
+        height: 60px;
+    }
+
+    &__top-header-title {
+        height: 40px;
+        overflow: hidden;
+    }
+
+    &__value {
+        position: relative;
+        z-index: 2;
+        height: 20px;
+        padding: 14px 0;
+    }
+
+    &__matching-points {
+        z-index: 3;
+        position: absolute;
+        font-size: 11px;
+        top: 0;
+        right: 2px;
+    }
+
+    &__highlight {
+        margin-top: -1px;
+        height: 48px;
+        position: absolute;
+        background: #35A3C4;
+        top: 2px;
+        z-index: 1;
+        width: 100%;
+        border-right: 1px solid #fff;
+    }
+}
+
+.connections-summary {
+
+    &__title {
+        font-size: 20px !important;
+    }
+
+    .time-nav {
+        margin-bottom: 10px;
+        position: relative;
+        top: -75px;
+    }
+}
+
+.series-connections-list {
+    padding-right: 15px !important;
+}
+
+
+.series-connections-item {
+    border-bottom: 1px solid #ccc;
+
+    &__series-section {
+        height: 250px;
+    }
+
+    &__pair-series {
+        padding: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    &__series {
+        border: 1px solid #dbdbdb;
+        padding: 10px 5px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &.first-series:before {
+            content: '';
+            border-right: 1px solid #dbdbdb;
+            display: block;
+            height: 42px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+        }
+
+        &.first-series:after {
+            content: "\E051";
+            display: block;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: calc(50% - 7px);
+            font-family: 'Glyphicons Regular';
+            color: #aaa;
+        }
+    }
+
+    &__bullet {
+        float: left;
+    }
+
+    &__title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 10px;
+        display: block;
+        width: 90%;
+    }
+
+    &__chart {
+        /*width: 200px;*/
+        height: 200px;
+    }
+
+    &__desc {
+        height: 250px;
+    }
+
+    &__matching-points {
+        position: relative;
+        top: 25px;
+        z-index: 2;
+        font-size: 13px;
+    }
+}
+
+.data-connections-desc {
+    height: 400px;
+    border: 1px solid #dbdbdb;
+    padding: 10px !important;
+    position: relative;
+    top: -50px;
+
+    &__title {
+        font-size: 20px !important;
+    }
+}
+
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+﻿.fullscreen-report-page-header {
+    height: 115px;
+    background-color: #f0f0f0;
+    padding: 0 5px;
+    border-bottom: 1px solid #C5C5C5;
+    margin-bottom: 15px;
+
+    &__title {
+        font-size: 37px;
+        color: #1e1e1e;
+        margin: 10px 10px 10px 15px;
+    }
+
+    &__separation-line {
+        border-top: 1px solid #C5C5C5;
+        margin: 1px 15px 17px;
+    }
+
+    &__button {
+        color: #fff;
+        margin: auto auto 10px 12px;
+    }
+}

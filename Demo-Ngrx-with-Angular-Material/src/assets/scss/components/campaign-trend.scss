@@ -1,0 +1,95 @@
+.menu-campaign-trend-item {
+    border-width: 0 !important;
+    border-bottom: 1px solid #ddd !important;
+    &__wrapper {
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    &__title-wrapper {
+        width: 100%;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-left: 0px;
+    }
+    &__title-link {
+        text-decoration: none;
+        font-size: 14px;
+        color: inherit !important;
+        width: calc(100% - 90px);
+    }
+    &__title {
+        cursor: text;
+        text-decoration: none;
+        font-size: 14px;
+        color: inherit !important;
+    }
+    &__add-series{
+        margin: 2px 12px 2px 0;
+        padding: 2px 10px;
+    }
+}
+
+.campaign-filter {
+    &__list {
+        margin: 10px 0;
+    }   
+    &__loading {
+        min-height: 150px;
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.campaign-filter-item {
+    padding: 1px 0;
+    margin: 0;
+    height: 45px;
+    .btn-default {
+        color: #000;
+    }
+    &__optional-item {
+        font-weight: lighter;
+        font-style: italic;
+    }
+    .campaign-filter-item__date-picker {
+        float: left;
+    }
+    .ui-select-container {
+        input {
+            font-size: 14px;
+        }
+    }
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.campaign-trend-popup {    
+    .modal-dialog {
+        width: 50%;
+    }   
+}
+
+.campaign-edit-filter {
+    padding: 10px;
+
+    &__scroll-bar {
+        padding-bottom: 0;
+    }
+    &__list {
+        float: left;
+        margin-top: 10px;
+        width: 100%;
+    }
+}

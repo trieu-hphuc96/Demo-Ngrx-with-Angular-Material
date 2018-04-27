@@ -1,0 +1,169 @@
+﻿.target-break-down-filter-groups {
+    width: 68%;
+    float: left;
+    padding-left: 75px !important;
+    &__perfect-scrollbar {
+        position: relative;
+        width: 100% !important;
+    } 
+    &__content {
+        margin-bottom: 30px;
+    }
+    .target-break-down-filter-group {
+        position: relative;
+        min-width: 170px;
+        margin-right: 40px;
+        float: left !important;
+        table {
+            width: auto;
+            margin: auto;
+            background: #fff;
+        }
+        &__name {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 1px solid #e7e7e7;
+            padding-bottom: 3px;
+            display: block;
+            max-width: 170px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &__filter-header {
+            padding: 8px 0px;
+            text-align: center;
+            border-bottom: none;
+        }
+        &__filter-name {
+            width: 80px;
+            display: block;
+            font-weight: 400;
+            height: 36px;
+            overflow: hidden;
+            line-height: 13px;
+            font-size: 12px;
+            padding-right: 5px;
+        }
+        &__filter-value {
+            color: #000;
+            padding-top: 15px;
+            padding-bottom: 6px;
+            min-height: 100%;
+            margin-bottom: 0;
+        }
+        &__filter-content {
+            position: relative;
+            text-align: center;
+            height: 57px;
+            width: 80px !important;
+            vertical-align: middle;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            &--highlight {
+                width: 100%;
+                border-right: 1px solid #fff;
+            }
+            &--has-respondent {
+                height: 94px;
+                .target-break-down-filter-group__filter-value {
+                    min-height: 50%;
+                }
+            }
+        }
+        &__filter-respondent {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-top: 1px solid #e7e7e7;
+            min-height: 50%;
+        }
+    }
+}
+
+.filter-group-highlight .table-wrapper {
+    width: 100% !important;
+}
+
+.filter-group-highlight .data-table-title {
+    width: 562px;
+}
+
+.target-breakdown-header-serie-table {
+    margin-bottom: 30px;
+    .series-header-item {
+        &__unit-value {
+            padding: 25% 25%;
+            text-align: center;
+        }
+        &__respondent-value {
+            border-top: 1px solid #e7e7e7;
+            padding: 25% 25%;
+            text-align: center;
+        }
+        &__date-time {
+            font-size: 1em;
+            font-weight: 700;
+            position: absolute;
+            top: -28px;
+            left: 10px;
+            white-space: nowrap;
+        }
+        &__title {
+            width: 98%;
+        }
+        @media screen and (max-width: 1300px) {
+            &__title {
+                width: 200px;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            &__title {
+                width: 170px;
+            }
+        }
+        @media screen and (max-width: 1050px) {
+            &__title {
+                width: 150px;
+            }
+        }
+        @media screen and (max-width: 850px) {
+            &__title {
+                width: 100px;
+            }
+        }
+    }
+    &__header {
+        padding-top: 56px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1em;
+        font-weight: 700;
+    }
+}
+
+.filter-group-highlight {
+    &__target-breakdown-header-series-table-section {
+        width: 32%;
+        float: left;
+    }
+    &__spinner {
+        width: 100%;
+        background: #fff;
+        min-height: 30px;       
+        z-index: 10;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+    &__empty-data-text {
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 20px;
+    }
+}

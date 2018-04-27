@@ -1,0 +1,101 @@
+﻿.full-screen {
+    margin-top: -4px;
+    float: left;
+    width: 100%;
+    padding-right: 0;
+    &__content {
+        margin: 10px 0 85px 0;
+        position: relative;
+        float: left;
+        padding: 0;
+        display: block;
+    }
+    &__graph-info {
+        color: #000000;
+        font-size: 30px;
+        margin-top: 0;
+        margin-left: -3px;
+        width: calc(100% - 350px);
+        padding-left: 0;
+    }
+    &__graph-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        margin-left: -10px;
+        border: 1px solid #e7e7e7;
+    }
+    &__graph-title {
+        line-height: 50px;
+    }
+    &__comment-btn {
+        position: static;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    &__graph-folder {
+        float: right;
+        margin-right: 20px;
+        .graph-nav {
+            top: 4px;
+            position: static;
+            margin-top: 4px;
+        }
+    }
+    &__comment-box {
+        margin: 10px -15px 0 0;
+        padding: 9px 0 10px 10px;
+        float: right;
+        z-index: 10;
+        position: relative;
+        border: 1px solid #d7d7d7;
+        background-color: #fff;
+    }
+    &__des {
+        color: #000000;
+        font-size: 13px;
+        margin: 12px 0 15px 0px;
+        padding-left: 15px;
+        z-index: 2;
+    }
+    .graph-options {
+        margin-top: 12px;
+    }
+    .options-section {
+        position: static;
+    }
+    .options-section__btn-show-options.glyphicon {
+        margin-right: 0;
+    }
+    .options {
+        top: 40px;
+        right: 30px;
+    }
+    .add-comment-link {
+        position: absolute;
+        top: -14px;
+        right: 15px;
+    }
+    .distribution-wrapper {
+        padding-left: 70px !important;
+    }
+    .chart-histogram.standard {
+        margin-top: 25px;
+    }
+    .distribution-align {
+        margin-left: -6%;
+        padding-left: 18px;
+    }
+    #hi-sorting {
+        right: 20px;
+    }
+    .chart-histogram.simple {
+        margin-top: 12px;
+    }
+    .chart-histogram.compact {
+        margin-top: 10px;
+    }
+    .chart-histogram.simple .chart-summary {
+        left: 22px;
+    }
+}

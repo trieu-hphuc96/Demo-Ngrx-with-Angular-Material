@@ -1,0 +1,103 @@
+﻿
+html{
+    position:relative!important;
+}
+body {
+    width: 1600px;
+}
+
+#tm-aside-edit, .navbar, #navigation-bar, .header-tm-edit, 
+#tm-edit-header-controls, .edit-topic-option, .btn-general, 
+.header-comment-bar, .sub-comment-box, .sub-comment-area, .comment-edit .glyphicon,
+.comment-box-edit__header {
+    display: none !important;
+}
+
+.export-ppt {
+    margin-top: 30px;
+    display: block !important;
+}
+
+.chart-ppt {
+    width: 1000px;
+    float: left;
+    height: auto;
+    padding-top: 20px;
+    padding: 10px;
+}
+
+#hi-sorting {
+    display: none;
+}
+
+.histogram-ppt {
+    width: 600px;
+    float: left;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+
+    .histogram-ppt .tm-histogram {
+        height: 800px;
+        overflow: hidden;
+    }
+
+        .histogram-ppt .tm-histogram.hi-full-width {
+            height: auto;
+            overflow: auto;
+        }
+
+.chart-summary {
+    font-size: 10pt !important;
+}
+
+.line-4 {
+    font-size: 10pt !important;
+}
+
+.chart-des .line-1 {
+    font-size: 150% !important;
+}
+
+.chart-des-title {
+    font-size: 12pt !important;
+}
+
+
+.hi-full-width .chart-summary {
+    font-size: 12pt !important;
+}
+
+.hi-full-width .line-4 {
+    font-size: 12pt !important;
+}
+
+.hi-full-width .chart-des .line-1 {
+    font-size: 180% !important;
+}
+
+.hi-full-width .chart-des-title {
+    font-size: 14pt !important;
+}
+
+.full-width .histogram-ppt {
+    width: 2000px;
+    padding-top: 20px;
+}
+
+.full-width .chart-ppt {
+    width: 1800px;
+}
+
+.comment-ppt {
+    padding: 130px 10px 10px 10px;
+    width: 700px;
+}
+
+#box-comment-scrollbar {
+    height: auto !important;
+}
+
+.main-comment__btn-show-sub-comment, .main-comment__add-sub-comment {
+    display: none;
+}

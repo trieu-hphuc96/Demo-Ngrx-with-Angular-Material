@@ -1,0 +1,118 @@
+ .campaign-item {
+     padding: 0 15px 10px 10px;
+     clear: both;
+     margin-bottom: 8px;
+     a {
+         font-size: 120%;
+         font-weight: bold;
+     }
+     &__wrapper {
+         font-size: 76%;
+         line-height: 1.4em;
+     }
+     &__image {
+         border: 1px solid #999999;
+         float: right;
+         height: 80px;
+         margin-right: 0;
+         overflow: hidden;
+         padding: 4px;
+         width: 80px;
+     }
+     &__tag-list {
+         margin-left: 0;
+     }
+ }
+
+ .campaign-tooltip {
+     width: 300px;
+     z-index: 1;
+     height: auto;
+     position: absolute;
+     border: solid 1px #aeaeae;
+     background-color: #fff;
+     text-align: left;
+     -moz-box-shadow: 0 5px 15px #999;
+     -webkit-box-shadow: 0 5px 15px #999;
+     -ms-box-shadow: 0 5px 15px #999;
+     box-shadow: 0 5px 15px #999;
+     padding: 0;
+     padding-bottom: 5px !important;
+     margin-bottom: 60px;
+     z-index: 1150;
+     &__btn-close {
+         margin-top: -11px !important;
+         margin-right: -8px;
+         font-size: 2.5em;
+         font-weight: normal;
+     }
+     span.title {
+         color: #999999;
+         float: left;
+         font-size: 0.8em;
+         font-weight: bold;
+         margin: 3px 0 5px;
+         padding: 0;
+     }
+     &__header {
+         padding: 5px 14px;
+         background-color: #F7F7F7;
+         border-bottom: 1px solid #EBEBEB;
+         -webkit-border-radius: 5px 5px 0 0;
+         -moz-border-radius: 5px 5px 0 0;
+         -ms-border-radius: 5px 5px 0 0;
+         border-radius: 5px 5px 0 0;
+     }
+     .arrow {
+         &.right {
+             margin-left: 35%;
+         }
+         &.left {
+             margin-left: -40%;
+         }
+     }
+     &__campaign-list {
+         position: relative;
+         overflow: hidden;
+         max-height: 300px;
+         width: 100%;
+         padding: 9px 5px 7px 5px;
+     }
+ }
+
+ .campaign-icon-list {
+     position: relative;
+     .row {
+         z-index: 0;
+         padding: 0;
+     }
+     a:hover {
+         text-decoration: none;
+     }
+ }
+
+ .campaign-icon-item {
+     margin-bottom: 20px !important;
+     &__icon {
+         width: 20px;
+         height: 13px;
+         background-repeat: no-repeat;
+         position: absolute;
+         cursor: pointer;
+         color: #767676;
+         font-size: 20px;
+         &:before {
+             margin-left: 0;
+         }
+     }
+ }
+
+ .master-chart-campaign .campaign-icon-list {
+     margin-left: 0;
+ }
+
+ #grid-chart-popup .campaign-tooltip {
+     &__campaign-list {
+         top: -5px;
+     }
+ }

@@ -1,0 +1,82 @@
+/* OVERRIDES FOR WHITELABELEING */
+
+
+/* 
+--------------------------
+COLOR 1: LINK AND BUTTON COLORS
+--------------------------
+*/
+a, .general-navbar i, .btn-default, .general-navbar .home-icon:hover {
+  color: #E2015E;
+}
+.general-navbar .home-icon, .sidebar .level-1 .back a, .sidebar .level-1 .back a span, .btn-primary, .btn-primary:link, .btn-primary:active, .btn-primary:visited, .sidebar .brand-logo .dropdown .fa-cog {
+  background-color: #E2015E;
+}
+.sidebar .level-1 .back a span {
+  border-right-color: #E2015E;
+}
+
+
+
+/* 
+--------------------------
+COLOR 2: hover color on links and buttons
+--------------------------
+*/
+.btn-primary:hover {
+  background-color: #a60748;
+  border-color: #6f0631;
+}
+.sidebar .level-1 .back a:hover {
+  background-color: #a60748;
+}
+.sidebar .level-1 .back a:hover span {
+  border-right: 11px solid #a60748;
+}
+
+
+
+/* 
+--------------------------
+COLOR 3: BACKGROUND SIDEBAR AND NAVBAR
+--------------------------
+*/
+.general-navbar {
+  background-color: #686766;
+}
+.sidebar {
+  background-color: #686766;
+  border-right-color: #686766;
+}
+.sidebar .level-1 .back a span {
+  border-top-color: #686766;
+  border-bottom-color: #686766;
+}
+
+
+
+/* 
+--------------------------
+COLOR 4: level 3 in sidebar
+--------------------------
+*/
+.sidebar .level-2 li li a {
+  color: #fff;
+  border-bottom: 1px solid #09748c;
+}
+
+
+
+/* 
+--------------------------
+LOGO: width must be 199px
+--------------------------
+*/
+.sidebar .brand-logo {
+  background-color: #fff;
+}
+.sidebar .brand-logo .the-logo {
+  height: 82px;
+  background-color: transparent;
+  background-image: url(../images/logo-betsson.png);
+}

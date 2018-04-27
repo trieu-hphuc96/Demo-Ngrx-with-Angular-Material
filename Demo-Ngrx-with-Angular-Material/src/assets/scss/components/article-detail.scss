@@ -1,0 +1,119 @@
+.article-header{
+    margin-left: 25px;
+}
+
+.article-content {   
+    position: relative;
+}
+
+.change-period-section {
+    text-align: right;
+    position: relative;    
+    padding-right: 0;
+    margin-bottom: 15px;   
+
+    &__display-time {
+        position: relative;
+        top: 1px;
+        right: 11px;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    &__btn-previous,
+    &__btn-next {
+        font-size: 12px;
+    }
+}
+
+.article-detail-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.article-detail-list {
+    &:before,
+    &--has-more-button:before {
+        bottom: 100px !important;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-right: 1px solid #ccc;
+        background: #ccc;
+        left: 75px;
+        top: 0;
+        bottom: 30px;
+    }
+    &--no-timeline:before {
+        display: none !important;
+    }
+}
+
+.article-detail-item {
+    margin-bottom: 20px;
+    &__creation-time {
+        color: #aaa;
+        position: relative;
+        background: #fff;
+        display: inline-block;
+        vertical-align: top;
+        width: 150px;
+        text-align: center;
+        &--half-width {
+            font-size: 12px;
+        }
+    }
+    &__container {
+        display: inline-block;
+        vertical-align: top;
+        word-wrap: break-word;
+        &--half-width {
+            display: block;
+            width: 100% !important;
+            margin-left: 150px;
+        }
+    }
+    &__header {
+        margin-bottom: 10px;
+    }
+    &__source,
+    &__type {
+        margin-right: 50px;
+        &--half-width {
+            display: block;
+        }
+    }
+    &__title {
+        font-weight: bold;
+        &--twitter {
+            font-weight: normal !important;
+        }
+    }
+    &__content {
+        text-align: justify;
+    }
+    &__link {
+        text-decoration: none !important;
+    }
+    .glyphicon {
+        margin-right: 5px;
+    }
+}
+
+.article-detail-number-showing {
+    margin-top: 20px;
+    border-top: 1px solid #e7e7e7;
+    padding-top: 10px;
+}
+
+.article-detail-spinner {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    min-height: 460px;
+}

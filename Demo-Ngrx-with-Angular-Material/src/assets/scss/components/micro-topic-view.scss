@@ -1,0 +1,174 @@
+﻿.micro-topic {
+    margin-left: 10px;
+    &__container {
+        .options-section .options-section__btn-show-options {
+            margin-right: 15px;
+            top: -8px;
+        }
+        .col-lg-14 {
+            width: 100%;
+        }
+    }
+    &__table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .series-filter-section {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .pagination {
+        margin-top: 10px !important;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    .is-edit-mode .options-section {
+        right: 0;
+    }
+    .tm-chart-wrapper[tm-chart] {
+        margin-bottom: 15px;
+    }
+    .tm-chart-wrapper[tm-master] {
+        margin-bottom: 10px;
+    }
+    .chart-container {
+        box-sizing: border-box;
+        min-height: 450px;
+        background: #fff;
+    }
+    .chart-container {
+        max-height: 280px !important;
+        min-height: 280px !important;
+    }
+    .main-chart .chart-container {
+        max-height: 480px !important;
+        min-height: 480px !important;
+    }
+    #empty-chart {
+        height: 100%;
+        top: 0;
+    }
+    *[tm-master] #tags-chart {
+        display: none;
+    }
+    *[tm-master] .icon-comment {
+        display: none !important;
+    }
+    .main-chart {
+        max-height: 340px;
+        position: relative;
+    }
+    .master-chart {
+        display: none !important;
+    }
+    *[tm-master] .iconCampaign {
+        display: none;
+    }
+    *[tm-master] #tags-chart {
+        display: none;
+    }
+    #chart-area .series-filter-section {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .options-section {
+        right: -14px;
+        top: 27px;
+    }
+    @media (max-width: 3200px) {
+        #chart-area .series-filter-section {
+            width: 100px;
+        }
+    }
+    @media (max-width: 1920px) {
+        #chart-area .series-filter-section {
+            width: 80px;
+        }
+    }
+    @media (max-width: 1600px) {
+        #chart-area .series-filter-section {
+            width: 60px;
+        }
+    }
+    @media (max-width: 992px) {
+        #chart-area .series-filter-section {
+            width: 40px;
+        }
+    }
+}
+
+.micro-topic-graph {
+    padding: 15px 10px 10px 10px;
+    border: 3px solid #e7e7e7;
+    border-left: 3px solid #fff;
+    min-height: 100px;
+    vertical-align: top;
+    position: relative;
+    &:nth-of-type(4) {
+        border-right: 3px solid #fff;
+    }
+    &__header {
+        min-height: 35px;
+        margin-bottom: -10px;
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        margin: -5px 10px 0 0;
+        z-index: 7;
+    }
+    &__glyphicon {
+        font-size: 22px !important;
+    }
+    &__title {
+        cursor: pointer;
+        margin: 0 80px 0 0;
+        z-index: 7;
+        padding: 5px 0 5px;
+        font-size: 20px;
+        &--sub-topic {
+            font-size: 26px;
+            cursor: auto;
+            padding-top: 0px;
+        }
+    }
+    &__folder-icon {
+        border-radius: 8px;
+        font-size: 13px;
+        right: 40px;
+        position: absolute;
+        top: 17px;
+    }
+    &__comment-btn {
+        right: 0;
+        top: -5px;
+        width: 100%;
+        padding-left: 35px;
+        display: none;
+        position: relative;
+        p {
+            float: left;
+        }
+        .icon-comment {
+            margin-left: 12px;
+        }
+    }
+    &__spinner {
+        min-height: 100px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+    &--sub-topic {
+        .tm-chart {
+            display: none;
+        }
+    }
+}

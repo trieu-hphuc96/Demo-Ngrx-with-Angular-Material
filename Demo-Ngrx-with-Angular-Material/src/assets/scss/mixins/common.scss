@@ -1,0 +1,79 @@
+﻿@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    -ms-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -o-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    transition: $value;
+}
+
+@mixin font-smoothing() {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    -o-border-radius: $value;
+    -ms-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin resize($value) {
+    -moz-resize: $value;
+    -ms-resize: $value;
+    -o-resize: $value;
+    resize: $value;
+}
+
+@mixin opacity($value) {
+    -webbkit-opacity: $value;
+    -o-opacity: $value;
+    -ms-opacity: $value;
+    opacity: $value;
+}
+
+@media (max-width: 858px) {
+    .export-section {
+        top: 31px !important;
+    }
+}
+@mixin create-text-overflow-ellipsis() {
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 2, $bgColor: white){
+    overflow: hidden;
+    position: relative;
+    line-height: $lineHeight;
+    max-height: $lineHeight * $lineCount; 
+    text-align: justify;
+    // margin-right: -1em;
+    padding-right: 1em;
+    &:before {
+      content: '...';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1em;
+      height: 1em;
+      margin-top: 0.2em;
+      background: $bgColor;
+    }
+  }
+  

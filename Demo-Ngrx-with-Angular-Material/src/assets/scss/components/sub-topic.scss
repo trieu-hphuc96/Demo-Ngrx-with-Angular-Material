@@ -1,0 +1,78 @@
+.sub-topic {}
+
+.sub-topic-view {
+    margin-top: 20px;
+    &__title {
+        color: #000000;
+        font-size: 30px;
+        line-height: 32px;
+    }
+    &__info-content {
+        float: left;
+        width: calc(100% - 350px);
+    }
+    &__options-icon {
+        margin-top: 5px;
+        margin-right: 15px;
+        .options-section {
+            position: static;
+        }
+        .dropdown-menu {
+            right: 3vw;
+            top: 50px;
+        }
+    }
+    &__options {
+        float: right;
+    }
+}
+
+.sub-topic-edit {
+    padding: 30px 15px 10px 15px;
+    &__label {
+        margin-top: 7px;
+        width: 85px;
+    }
+    &__desc {
+        width: calc(100% - 140px);
+    }
+    &__desc-content.row {
+        margin-top: 15px;       
+    }   
+    &__desc-display{
+        padding-left: 0;
+    }
+    
+    &__desc-display-select{
+        padding: 6px 0px 6px 6px;
+    }
+
+    &__desc-info{
+        position: absolute;
+        top: 6px;
+        right: -10px;
+
+        div.popover{
+            width: 400px;
+            max-width: 400px;
+        }
+
+        h3.popover-title, 
+        .close-popover{
+            display: none;
+        }
+
+        ul{
+            padding-left: 10px;
+            margin-bottom: 0;
+
+            li{ 
+                margin-top: 10px;
+            }
+
+            li:first-child{ 
+                margin-top: 0;
+            }
+        }
+    }
+}

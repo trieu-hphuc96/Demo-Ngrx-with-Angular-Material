@@ -1,0 +1,95 @@
+﻿.fs-header {
+    background-color: #F0F0F0;
+    background-image: none;
+    height: 55px;
+    margin: 0 -15px 4px -15px;
+    border-bottom: 1px solid #C5C5C5;
+    &--offline {
+        height: 115px;
+        margin-top: 4px;
+    }
+    &__title-wrapper {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-top: -5px;
+    }
+    &__title {
+        max-width: 100%;
+        font-size: 37px;
+        color: #1E1E1E;
+        text-align: left;
+        margin: 10px 0 5px 0;
+        height: 45px;
+    }
+    &__time-period {
+        font-size: 14px;
+        padding: 10px 0 0 10px;
+        text-align: right;
+    }
+    &__divider-line {
+        border-top: 1px solid #C5C5C5;
+        margin: 1px 15px 10px;
+    }
+    &__back-btn {
+        overflow: hidden;
+        a {
+            margin-left: 15px;
+            padding: 5px 40px;
+        }
+    }
+    @media screen and (max-width: 1266px) {
+        &__title {
+            max-width: 500px;
+        }
+    }
+    @media screen and (max-width: 1142px) {
+        &__title {
+            max-width: 400px;
+        }
+    }
+    @media screen and (max-width: 1042px) {
+        &__title {
+            max-width: 350px;
+        }
+    }
+    @media screen and (max-width: 1017px) {
+        &__time-period {
+            font-size: 72%;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        &__time-period {
+            font-size: 65%;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        &__title {
+            max-width: 300px;
+        }
+    }
+    @media screen and (max-width: 876px) {
+        &__title {
+            max-width: 250px;
+        }
+    }
+    @media screen and (max-width: 821px) {
+        &__title {
+            max-width: 190px;
+        }
+    }
+}
+
+.icon-header {
+    &__icon {
+        color: #000 !important;
+        text-decoration: none;
+    }
+    &__close-btn {
+        color: #fff !important;
+        padding: 4px 12px;
+        position: relative;
+        top: -4px;
+        left: 9px;
+        border: 1px solid #C5C5C5;
+    }
+}

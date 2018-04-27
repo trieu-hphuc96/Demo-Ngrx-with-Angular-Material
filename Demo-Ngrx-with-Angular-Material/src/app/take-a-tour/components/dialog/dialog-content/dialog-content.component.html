@@ -1,3 +1,49 @@
-<p>
-  dialog-content works!
-</p>
+<div class="takeATour-title">
+
+  <h1 mat-dialog-title class="takeATour-title__h1">
+    {{currentStep.index === 0 ? "Welcome to Trend Monitor" : "Guide The Tour"}}
+  </h1>
+
+</div>
+
+<div mat-dialog-content class="takeATour-content">
+
+  <div *ngIf="!isFirstStep" (click)="previousStep()" class="takeATour-content__clickable-area takeATour-content__clickable-area--left">
+    <mat-icon (click)="previousStep()" class="takeATour-content__btn takeATour-content__btn--left">keyboard_arrow_left</mat-icon>
+  </div>
+
+  <div *ngIf="!isLastStep" (click)="nextStep()" class="takeATour-content__clickable-area takeATour-content__clickable-area--right">
+    <mat-icon (click)="nextStep()" class="takeATour-content__btn takeATour-content__btn--right">keyboard_arrow_right</mat-icon>
+  </div>
+
+  <h4 class="takeATour-content__title">
+    {{currentStep.index === 0 ? "" : currentStep.title}}
+  </h4>
+
+  <div [ngClass]="{
+    'takeATour-content__firstImage': currentStep.index === 0,
+    'takeATour-content__image': currentStep.index !== 0
+  }">
+    <img src="{{currentStep.imageUrl}}" />
+  </div>
+
+  <p class="takeATour-content__description">
+    {{currentStep.description}}
+  </p>
+
+</div>
+
+<mat-divider></mat-divider>
+<div mat-dialog-actions class="takeATour-action">
+
+  <button mat-raised-button class="mat-primary" (click)="showStepMenu()" [matMenuTriggerFor]="stepMenu">
+    {{currentStep.title}}
+    <mat-icon>arrow_drop_up</mat-icon>
+  </button>
+  <mat-menu class="takeATour-stepMenu" #stepMenu="matMenu" yPosition="above" [overlapTrigger]="false">
+    <button mat-menu-item *ngFor="let step of data" (click)="onMenuClick(step)">{{step.title}}</button>
+  </mat-menu>
+
+  <button mat-button class="takeATour-action__btn-end-tour" mat-dialog-close>End Tour</button>
+
+</div>

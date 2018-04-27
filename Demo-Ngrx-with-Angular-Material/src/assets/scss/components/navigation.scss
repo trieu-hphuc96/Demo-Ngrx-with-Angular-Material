@@ -1,0 +1,9 @@
+﻿@import '../themes/variables.scss';
+@import '../mixins/navigation/navigation.scss';
+@import '../mixins/navigation/rightNavigation.scss';
+@import '../mixins/navigation/leftNavigation.scss';
+
+
+.nav-bar {
+    @include create-navigation($navigation-background-color, $navigation-left-navigation-content-color, $navigation-left-navigation-content-icon-color);
+}

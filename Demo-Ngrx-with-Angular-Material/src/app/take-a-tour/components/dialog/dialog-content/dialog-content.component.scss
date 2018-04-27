@@ -1,0 +1,110 @@
+.takeATour-content{
+    text-align: center;
+    padding-top: 10px;
+    overflow-y: auto;
+    position: relative;
+    padding: 0px;
+    margin: 0px; 
+    height: 100%;
+    max-height: 71vh;
+}
+
+.takeATour-content__title{
+    font-size: 18px;
+    -webkit-margin-before: 10px;
+    -webkit-margin-after: 10px;    
+}
+
+.takeATour-content__firstImage{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.takeATour-content__firstImage img{
+    max-width: 65%; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.takeATour-content__image img{
+    max-width: 65%; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.takeATour-content__description{
+    padding: 20px 20px !important;
+    font-size: 16px;
+}
+
+.takeATour-content__clickable-area{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+}
+
+.takeATour-content__clickable-area--left{
+    left: 0;
+    right: auto;
+}
+
+.takeATour-content__clickable-area--right{
+    left: auto;
+    right: 0;
+}
+
+
+.takeATour-content__btn {
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    font-size: 46px;
+    -webkit-transform: scaleX(0.8) translateY(-50%);
+    transform: scaleX(0.8) translateY(-50%);
+    cursor: pointer;
+}
+
+.takeATour-content__btn:hover {
+    opacity: 1;
+    color: #ff9933;
+}
+
+.takeATour-content__btn--left {
+    left: 15px;
+}
+
+.takeATour-content__btn--right {
+    right: 15px;
+}
+
+.takeATour-title{
+    background-color: #ededed;
+    color: #858585;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5; 
+}
+
+.takeATour-title__h1{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Muli', 'Nunito', sans-serif
+}
+
+.takeATour-action{
+    padding: 15px 20px;
+    min-height: 5%;
+    display: block;
+}
+
+.takeATour-action__btn-end-tour {
+    color: #767676;
+    background-color: transparent !important;
+    border: 1px solid #c7c7c7 !important;
+    margin-left: 0px !important;
+    line-height: 34px;
+}

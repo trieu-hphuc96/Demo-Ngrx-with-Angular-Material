@@ -1,0 +1,107 @@
+﻿.custom-topic-grid-col {
+    min-height: 430px;
+    background-color: #fff;
+    border: 3px solid #e7e7e7;
+    margin-top: -3px;
+    border-left-width: 0;
+    padding: 10px;
+    &--micro {
+        .col-lg-14 {
+            width: 100%;
+        }
+        .padding-list-icon {
+            display: none;
+        }
+    }
+    &--half-width {
+        .col-lg-14,
+        .col-lg-10 {
+            width: 100%;
+        }
+        .compact-legend-series {
+            width: 50% !important;
+        }
+    }
+    &--sub-topic {
+        min-height: 150px;
+        .tm-chart {
+            display: none;
+        }
+    }
+    &__graph-icon {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    &__folder-icon {
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        font-size: 13px;
+        padding: 2px 12px;
+    }
+    &__change-size-icon {
+        font-size: 1.4em;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+    &__move-icon {
+        font-size: 1.4em;
+        cursor: move;
+        padding-top: 2px;
+    }
+    &__graph-title {
+        cursor: pointer;
+        font-size: 20px;
+        padding-bottom: 5px;
+        &--sub-topic {
+            cursor: auto;
+            font-size: 26px;
+            margin-top: 5px;
+        }
+    }
+    &__options-icon {
+        margin-top: 10px;
+    }
+    &__graph-info-wrapper {
+        float: left;
+        width: calc(100% - 70px);
+    }
+    &__graph-options-wrapper {
+        float: right;
+    }
+    .options-section {
+        position: relative;
+        right: 0;
+    }
+    .options-section__btn-show-options.glyphicon {
+        margin: 0;
+        top: 0;
+    }
+    &.col-xs-8 .chart-container,
+    &.col-xs-6 .chart-container {
+        min-height: 280px;
+        max-height: 280px;
+    }
+    #tm-data-table {
+        margin-bottom: 20px;
+    }
+    .padding-list-icon {
+        display: none;
+    }
+    *[tm-master] #tags-chart {
+        display: none;
+    }
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+}

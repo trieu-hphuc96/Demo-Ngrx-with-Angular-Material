@@ -1,0 +1,103 @@
+﻿.series-selection-list {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 0 10px 10px;
+    &__item {
+        padding: 6px 0 0 10px;
+        cursor: pointer;
+        border-left: 3px solid transparent;
+        position: relative;
+        &--active {
+            border-left: 5px solid #bbb;
+        }
+    }
+    &__bullet-wrapper {
+        padding-left: 0;
+    }
+    &__bullet {
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        margin-top: 2px;
+        margin-right: 10px;
+    }
+    &__title-content {
+        padding-right: 0;
+        padding-left: 5px;
+        position: inherit !important;
+    }
+    &__title {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+    &__value-wrapper {
+        text-align: right;
+        padding: 0;
+    }
+    &__value {
+        border-radius: 20px;
+        background-color: #666;
+        color: #fff;
+        display: inline-block;
+        padding: 0 8px;
+        font-size: 0.9em;
+    }
+    .series-filter-section {
+        padding-left: 0 !important;
+        margin-top: -7px;
+    }
+}
+
+.text-analytics {
+    &__title {
+        color: #000;
+        font-size: 1.2em !important;
+        width: 180px;
+    }
+    &__content-highlight {
+        text-align: center;
+    }
+    &__chart {
+        height: 320px;
+    }
+    &__sentiment-value {
+        font-size: 1.7em;
+    }
+    &__divider-line {
+        border: 1px solid;
+        width: 100px;
+        margin: 5px auto 0;
+    }
+    &__sentiment-date {
+        font-size: 0.8em;
+    }
+    &__word-cloud {
+        text-align: center;
+        div[words] {
+            margin: 0 auto 25px;
+        }
+    }
+    &__spinner {
+        height: 1350px;
+        img {
+            top: 10%;
+        }
+    }
+    &__tooltip-wrapper {
+        min-width: 150px;
+    }
+    &__tooltip-wrapper p {
+        margin: 0;
+    }
+    &__tooltip-date {
+        font-size: 0.8em;
+    }
+    &__tooltip-title {
+        font-size: 1em;
+    }
+    .series-filter-section {
+        padding-left: 0 !important;
+    }
+}

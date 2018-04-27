@@ -1,0 +1,139 @@
+@import './../mixins/common.scss';
+
+.data-source-filter{
+
+    &__modal{
+        width: 90%;
+    }
+
+    &__modal-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__modal-header-title{
+        width: calc(100% - 45px);
+        @include create-text-overflow-ellipsis();
+    }
+
+    &__modal-header-close-button{
+        margin: -5px 0 0 0 ;
+        padding: 0;
+        float: right;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 1;
+        color: #000000;
+        text-shadow: 0 1px 0 #ffffff;
+        opacity: 0.2;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        -webkit-appearance: none;
+        filter: alpha(opacity=20);
+
+        &:hover, &:focus{
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        span.close-modal{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
+    &__modal-body{
+        padding: 15px;
+    }
+
+    &__footer-button{
+
+        &--right{
+            margin-right: 10px;
+        }
+
+        &--left{
+            margin-left: 10px;
+        }
+    }
+
+    &__check-usage-button{
+        margin: 10px 30px 5px 0;
+    }
+}
+
+.tracker-filter{
+
+    &__tabs{
+        background-color: #E4E4E4;
+    } 
+    
+    &__tabs-content{
+       border: 1px solid #dddddd;
+    }
+
+    &__edit{
+
+        &--full-width{
+            width: 100%;
+        }      
+    }
+
+    &__edit-content{
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 15px;
+    }
+
+    &__edit-title{
+        padding: 7px 0 0 0;
+    }
+
+    &__edit-list-wrapper{
+        margin: 15px 0 30px 0 !important;
+    }
+
+    &__edit-list{
+        border: 1px solid #dddddd;
+        padding: 0 15px;
+        box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+    }
+
+    &__edit-item{
+        border-bottom: 1px solid #dddddd;
+        padding: 10px 0;
+
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    &__edit-item-title{
+        padding: 10px;
+    }
+
+    &__edit-selection-between{
+        margin-top: 10px !important;
+    }
+
+    &__organize-content{
+        @extend .tracker-filter__edit-content;
+        clear: both;
+    }   
+}
+
+.calculated-measure-filter{
+    
+    &__wrapper{
+        margin-top: 15px;
+        padding-right: 15px;
+        overflow: auto;
+        position: relative;
+        clear: both;        
+    }
+}

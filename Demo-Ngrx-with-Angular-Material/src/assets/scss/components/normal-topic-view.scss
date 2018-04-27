@@ -1,0 +1,253 @@
+﻿.topic {
+    &__header {
+        margin-top: 20px;
+        border: 1px solid transparent;
+        padding-right: 10px;
+        position: relative;
+        margin-left: -2px;
+        &.edit-mode {
+            background: url(../images/right-bg.png);
+            background-repeat: repeat-y;
+            background-position: right;
+        }
+    }
+    &__title {
+        font-size: 37px;
+        font-weight: 300
+    }
+    &__title-content {
+        color: #1E1E1E;
+        font-size: 30px;
+        margin-top: 0;
+        margin-left: -3px;
+        padding-left: 0;
+        line-height: 37px;
+    }
+    &__des {
+        margin-left: -17px;
+    }
+    &__options {
+        margin-left: 40px;
+        position: absolute;
+        font-size: 0.7em;
+        font-weight: normal;
+        right: 0;
+        label {
+            font-weight: normal;
+            cursor: pointer;
+        }
+        li .glyphicon {
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+    }
+}
+
+.topic-edit-form {
+    &__label {
+        margin-left: -9px;
+    }
+    &__control {
+        margin: 0 0 15px;
+        padding-left: 5px;
+    }
+}
+
+.normal-topic {
+    &__grid-hr {
+        width: 100%;
+        border-bottom: 4px solid #e7e7e7;
+        margin-left: 0;
+        clear: both;
+    }
+    .col-md-24 {
+        width: 100% !important;
+    }
+    .grid-chart-full-width {
+        width: 100% !important;
+    }
+    .grid-chart-half-width {
+        width: 50% !important;
+        overflow-x: hidden;
+        .compact-legend-series {
+            width: 50% !important;
+            float: left !important;
+            &:nth-child(odd) .line-right {
+                border: 0 !important;
+            }
+        }
+        .distribution-wrapper.col-md-12,
+        .chart-histogram.col-md-12,
+        .tm-chart-wrapper.col-md-14,
+        .chart-histogram.col-md-10 {
+            width: 100% !important;
+        }
+        .distribution-wrapper.col-lg-12,
+        .chart-histogram.col-lg-12,
+        .tm-chart-wrapper.col-lg-14,
+        .chart-histogram.col-lg-10 {
+            width: 100% !important;
+        }
+        #tm-data-table.button-mode .nav-tabs li:not(.tab-bottom).active a {
+            background: #fff;
+            color: #ff9933;
+        }
+        #tm-data-table.button-mode .nav-tabs li:hover a {
+            background: #eee;
+            color: #555 !important;
+            cursor: pointer;
+        }
+        .pie-wrapper {
+            max-width: 150px;
+        }
+        .compact-border-bottom {
+            display: block !important;
+        }
+        .compact-border-bottom.last-compact-item {
+            display: none !important;
+        }
+        .distribution-main {
+            width: 80%;
+        }
+        .left-side-distribution {
+            width: 20%;
+        }
+        .histogram-margin-top {
+            margin-top: 0;
+        }    
+        .data-br-total-label {
+            left: 2px;
+            right: inherit;
+        }
+        @media screen and (max-width: 1200px) {
+            .chart-histogram.standard .title-label {
+                width: 65%;
+            }
+        }       
+        @media screen and (min-width: 1821px) and (max-width: 2800px) {
+            .data-table-title {
+                width: 221px;
+            }
+        }
+        @media screen and (max-width: 1820px) {
+            .data-table-title {
+                width: 175px;
+            }
+        }
+        @media screen and (max-width: 1600px) {
+            .data-table-title {
+                width: 150px;
+            }
+        }
+        @media screen and (max-width: 1300px) {
+            .data-table-title {
+                width: 85px;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .data-table-title {
+                width: 80px;
+            }
+        }
+    }
+    .grid-chart-border-right {
+        border-right: 1px solid #e7e7e7;
+    }
+    .grid-item-right {
+        margin-left: -5px !important;
+        border-left: 5px solid #e7e7e7 !important;
+    }
+    .grid-item-left {
+        border-right: 5px solid #e7e7e7 !important;
+    }
+    .histogram-margin-top #warningTooltip {
+        margin-left: -5px;
+    }
+}
+
+.normal-topic-graph {
+    float: left;
+    list-style-type: none;
+    width: 100%;
+    min-height: 285px;
+    position: relative;
+    border-bottom: 5px solid #e7e7e7;
+    margin-top: -4px;
+    &:first-child {
+        border-top: 5px solid #e7e7e7;
+    }
+    .options-section {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .exporting-comment-actived {
+        position: static !important;
+    }
+    .chart-histogram.col-md-24 {
+        margin-top: 48px;
+    }
+    &__content {
+        padding: 0 0 5px 0;
+        margin: 10px;
+        .options-section .options-section__btn-show-options {
+            top: 3px;
+            left: 10px;
+        }
+        .graph-nav {
+            right: 140px;
+            top: 10px;
+        }
+    }
+    &__header {
+        width: calc(100% - 145px);
+        float: left;
+        border: 1px solid transparent;
+        padding-right: 10px;
+        position: relative;
+        margin-left: -2px;
+    }
+    &__title {
+        margin-top: 5px;
+        line-height: 36px;
+        margin-bottom: 0;
+        cursor: pointer;
+        padding-left: 0;
+        &--sub-topic {
+            font-size: 28px;
+            cursor: auto;
+        }
+    }
+    &__comment-btn {
+        position: static !important;
+        margin-top: 15px;
+        i,
+        b {
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .btn-general,
+        .btn-primary {
+            padding: 2px 10px;
+            cursor: pointer;
+        }
+    }
+    .options-icon {
+        float: right;
+        margin-top: 13px;
+    }
+    &__folder-icon {
+        margin-top: 13px;
+        float: right;
+        border-radius: 9px;
+        font-size: 13px;
+        padding: 2px 12px;
+    }
+    &__description {
+        line-height: 1.2;
+    }
+    &--sub-topic {
+        min-height: 150px;
+    }
+}

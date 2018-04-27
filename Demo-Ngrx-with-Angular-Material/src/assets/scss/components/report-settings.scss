@@ -1,0 +1,218 @@
+﻿@mixin left-margin() {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.offline-report-settings {
+    padding-left: 0;
+    padding-right: 0;
+    float: right;
+    background: #fff;
+}
+
+.report-settings {
+    &__content-wrapper {
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        direction: ltr;
+    }
+}
+
+.offline-report-list-section {
+    margin-top: 5px;
+    @include left-margin();
+}
+
+.offline-report-settings-desc {
+    margin: 0 0 5px;
+}
+
+.create-offline-report-section {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.create-offline-report-section {
+    &__title {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.report-time-period {
+    &__title {
+        font-size: 15px;
+    }
+}
+
+.report-time-period-options {
+    &__list {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    &__item {
+        & input {
+            font-size: 14px;
+        }
+        & label {
+            font-weight: normal;
+            cursor: pointer;
+        }
+    }
+}
+
+.fixed-time-report-period {
+    &__date-time {}
+}
+
+.fixed-time-date-selection {
+    text-align: left;
+    padding: 1px 0;
+    margin: 0;
+    position: relative;
+    &__title {
+        margin-top: 7px;
+    }
+    &__date-picker {
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        display: table;
+        border-collapse: separate
+    }
+    & input {
+        border-top-right-radius: 4px;
+        background: transparent;
+        width: 100%;
+    }
+}
+
+.schedule-report-period-item {
+    margin-top: 10px;
+    &__title {
+        cursor: pointer;
+    }
+    &__rdo-btn {
+        vertical-align: top;
+    }
+    & label {
+        font-weight: 400;
+        & i {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+}
+
+.edit-report-title-info {
+    margin: 25px 0;
+    & input,
+    textarea {
+        width: 98%;
+        margin-left: 15px;
+    }
+}
+
+.report-share-with-section {
+    @include left-margin();
+    margin-bottom: 20px;
+}
+
+.report-shared-user-nav {
+    background-color: #EEEEEE;
+    border: 1px solid #C5C5C5;
+    & li.active {
+        & a,
+        a:hover,
+        a:focus {
+            color: #555;
+            background-color: #f6f6f6;
+            border-bottom-color: transparent;
+        }
+    }
+    &__tab {
+        & a:hover,
+        a {
+            color: #555;
+        }
+    }
+    &__tab-content {
+        border-left: solid 1px #C5C5C5;
+        border-right: solid 1px #C5C5C5;
+        border-bottom: solid 1px #C5C5C5;
+    }
+}
+
+.report-registered-users-table {
+    background-color: #F6F6F6;
+    padding: 0 12px 10px 0;
+}
+
+.report-registered-users-item {
+    position: relative;
+    & div {
+        position: static;
+    }
+    &__content {
+        height: 70px;
+    }
+    &__checkbox {
+        & input {
+            position: absolute;
+            top: 50%;
+            height: 14px;
+            margin-top: -7px;
+        }
+    }
+    &__user-img {
+        & label {
+            height: 45px;
+            width: 45px;
+            margin-top: 10px;
+            background-position: center;
+            border-radius: 50%;
+            background-color: white;
+        }
+    }
+    &__user-info {
+        font-size: 12px;
+        padding-top: 10px;
+        & p {
+            color: #999999;
+            margin: 0 0;
+        }
+    }
+}
+
+#rp-users-info article figure {
+    margin-top: 3px;
+}
+
+#rp-users-info .color-user-info {
+    background-color: #dddddd;
+}
+
+.report-distribution-list {
+    background-color: #f6f6f6;
+}
+
+.report-distribution-list-content {
+    height: auto;
+    padding: 1%;
+    &__email-input {
+        resize: vertical;
+    }
+    &__warning-mess {
+        color: red;
+        margin-left: 5px;
+    }
+    &__warning-mess-title {
+        color: black;
+        line-height: 40px;
+    }
+}

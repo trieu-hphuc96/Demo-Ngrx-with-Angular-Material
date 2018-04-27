@@ -1,0 +1,74 @@
+.options {
+    &__item {
+        font-size: 14px;
+        padding: 4px 10px 0 10px;
+        cursor: pointer;
+        &:hover {
+            background: #f1f1f1;
+        }
+        &--label {
+            cursor: default;
+            color: #777;
+            font-size: 14px;
+            &:hover {
+                background: #fff;
+            }
+        }
+        a {
+            padding: 0 !important;
+            cursor: pointer;
+            color: #000 !important;
+            text-decoration: none;
+            span {
+                color: #000;
+            }
+        }
+    }
+}
+
+.options-section {
+    position: absolute;
+    right: -30px;
+    color: #000;
+    .glyphicon {
+        font-size: 1.2em;
+        margin-right: 8px;
+    }
+    &__btn-show-options.glyphicon {
+        margin-right: 20px;
+        font-size: 1.4em;
+        top: -2px;
+    }
+    label {
+        cursor: pointer;
+        font-weight: normal !important;
+    }
+    .dropdown-menu {
+        -moz-min-width: 255px;
+        -ms-min-width: 255px;
+        -o-min-width: 255px;
+        -webkit-min-width: 255px;
+        min-width: 255px;
+    }
+    .options--sub-topic {
+        -moz-min-width: 160px;
+        -ms-min-width: 160px;
+        -o-min-width: 160px;
+        -webkit-min-width: 160px;
+        min-width: 160px;
+    }
+    .dropdown-toggle {
+        -webkit-box-shadow: none !important;
+        -ms-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    .fa {
+        font-size: 20px;
+    }
+    @media (max-width: 858px) {
+        top: 31px !important;
+    }
+    hr {
+        margin: 0 !important;
+    }
+}

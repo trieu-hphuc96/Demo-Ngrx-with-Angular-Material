@@ -1,0 +1,288 @@
+﻿.main-comment {
+    color: #000;
+    margin: 5px 0 5px 15px;
+    em {
+        font-size: 12px;
+        color: #999999;
+    }
+    &__sub-comment-list {
+        &__btn-edit-group {
+            margin-right: -35%;
+            padding-right: 26%;
+        }
+    }
+    &__btn-show-sub-comment,
+    &__add-sub-comment {
+        padding-left: 40px;
+    }
+    .comment-item {
+        margin: 0 0 5px;
+        display: inline-block;
+        width: 100%;
+        &--sub {
+            padding: 0 5px 0 40px;
+        }
+        &__btn-actions {
+            padding-bottom: 5px;
+            padding-right: 20px;
+            .glyphicon {
+                margin-left: 5px;
+            }
+            .hover-icon {
+                visibility: hidden;
+            }
+        }
+        &__profile-image {
+            float: left;
+            img {
+                border-radius: 50%;
+            }
+        }
+        &__info {
+            padding: 0 5px 0 40px;
+            a:hover {
+                text-decoration: none !important;
+            }
+        }
+        &__user-name {
+            color: #000 !important;
+            padding-right: 3px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: default;
+            &:hover {
+                color: #000 !important;
+            }
+        }
+        &:hover .hover-icon {
+            visibility: visible;
+        }
+    }
+}
+
+.comment {
+    z-index: 10000 !important;
+    top: 100px;
+    &__container {
+        margin: auto;
+        margin-top: 80px;
+        position: relative;
+        min-height: 400px;
+    }
+    .popover-content {
+        max-height: 285px;
+        padding: 1px 7px 1px 1px;
+    }
+    &--tooltip {
+        span.close {
+            color: #0461E0;
+            cursor: pointer;
+            float: right;
+            font-size: 0.8em;
+        }
+        header b {
+            color: #999999;
+        }
+        em {
+            font-size: 12px;
+            color: #999999;
+        }
+        header {
+            padding: 5px 14px;
+            background-color: #F7F7F7;
+            border-bottom: 1px solid #EBEBEB;
+            -webkit-border-radius: 5px 5px 0 0;
+            -moz-border-radius: 5px 5px 0 0;
+            -ms-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+        }
+        .right {
+            margin-left: 35% !important;
+        }
+        .left {
+            margin-left: -40% !important;
+        }
+        .popover-content {
+            max-height: none;
+            min-height: 55px;
+            overflow: hidden;
+            position: relative;
+            padding-left: 0;
+        }
+        .close {
+            margin-top: -9px;
+            margin-right: -8px;
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+        .profile-image {
+            float: left;
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+    &--tooltip-detail {
+        .main-comment {
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+    .modal-body {
+        font-size: 13px;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .modal-header {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    .modal-title {
+        font-size: 20px;
+    }
+    .close {
+        font-size: 2.6em;
+        margin-top: -5px !important;
+    }
+}
+
+.comment-box-edit {
+    .post-comment-form {
+        &__btn-cancel-comment {
+            font-size: 13px;
+        }
+    }
+    .form-control {
+        width: 100%;
+    }
+    .input-group {
+        width: 130px;
+    }
+    &__btn-hide {
+        a {
+            text-decoration: none !important;
+        }
+    }
+    button {
+        font-size: 13px;
+        padding: 3px 10px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    &__content {
+        color: #999999;
+        font-size: 13px;
+        padding: 10px 5px !important;
+    }
+    &__edit-content {
+        margin-left: 2px;
+    }
+    &__hide-comment-box {
+        text-decoration: none;
+    }
+    &__fs-comment-button {
+        font-size: 13px;
+    }
+    &__no-comment {
+        padding-left: 4px !important;
+        &>span {
+            font-size: 17px;
+        }
+    }
+    textarea {
+        width: 95% !important;
+    }
+    &__sub-comment-content {
+        margin-top: 10px;
+    }
+    .comment-edit p {
+        color: #000;
+    }
+    &__header {
+        margin-bottom: 15px;
+    }
+    &__header label {
+        margin: 5px 0 -5px 2px;
+        font-size: 12px;
+    }
+    &__btn-hide {
+        span {
+            font-size: 17px;
+        }
+    }
+}
+
+.icon-comment {
+    .penetrace-comment:hover {
+        text-decoration: none;
+    }
+}
+
+.comment-box {
+    background-color: #fff;
+    padding: 9px 10px 10px 0;
+    z-index: 1041;
+    position: absolute;
+    right: -15px;
+    top: -34px;
+    min-height: 150px;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    border-right: none;
+}
+
+.fs-comment-content {
+    margin: 10px -15px 0 0;
+    padding: 9px 0 10px 10px;
+    float: right;
+    z-index: 10;
+    position: relative;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+}
+
+.fs-comment-content section {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#grid-chart-popup {
+    .fs-comment-content {
+        padding-left: 5px;
+    }
+    .comment-area {
+        position: relative;
+        z-index: 1;
+        top: 0;
+        visibility: hidden;
+    }
+    .add-comment {
+        visibility: hidden;
+        margin: 0 0 2px;
+    }
+    .comment-visible {
+        visibility: visible;
+    } 
+}
+
+#fsDateForComment {
+    width: 250px;
+}
+
+#tm-edit .tm-graph-box-comment {
+    float: right;
+    z-index: 10;
+    position: relative;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    padding: 10px 0 10px 10px;
+}
+
+#fs-content .comment--tooltip {
+    margin-top: -2px;
+}
+
+.master-chart-comment #comment--tooltip {
+    margin-top: 370px;
+}

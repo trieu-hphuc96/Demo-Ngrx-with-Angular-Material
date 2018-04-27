@@ -1,0 +1,195 @@
+﻿
+@import './../mixins/common.scss';
+.topic-highlight-table {
+    margin-left: 10px;
+
+    &__container {
+        padding-bottom: 20px;
+    }
+
+    &__graph-list {
+        float: left;
+        width: 25%;
+        padding-top: 3px;
+    }
+
+    &__graph-item {
+        border: 3px solid #e7e7e7;
+        padding: 8px 15px;
+        height: 105px;
+        margin-top: -3px;
+        margin-left: -3px;
+        position: relative;
+        cursor: pointer;
+        background: #fff;
+        transition-property: background;
+        transition-duration: .5s;
+        transition-timing-function: linear;
+    }
+
+    &__graph-item:hover {
+        background: #f1f1f1;
+        .topic-highlight-table__graph-title::after {
+            background: #f1f1f1;
+        }
+        .topic-highlight-table__description::after {
+            background: #f1f1f1;
+        }
+    }
+
+    &__graph-info-wrapper {
+        width: 100%;
+        text-align: left;
+    }
+
+    &__series {
+        border: 3px solid #e7e7e7;
+        padding: 8px 15px;
+        height: 105px;
+        margin-top: -3px;
+        margin-left: -3px;
+        position: relative;
+        width: 300px;
+        float: left;
+        text-align: center;
+    }
+
+    &__series.no-series-data {
+        border-width: 0 !important;
+    }
+
+    .ps-scrollbar-y-rail {
+        display: none !important;
+    }
+
+    &__graph-title {
+        font-weight: 700;
+        font-size: 15px;
+        @include multiLineEllipsis(20px,2);
+        &::after{
+            transition-property: background;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+        }
+    }
+
+    &__description {
+        font-size: 12px;
+        @include multiLineEllipsis(15px,2);
+        &::after{
+            transition-property: background;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+        }
+    }
+
+    &__graph-info {
+        display: table-cell;
+        vertical-align: middle;
+        height: 75px;
+        padding-top: 11px;
+    }
+
+    &__graph-info span,
+    &__graph-info-wrapper {
+        cursor: pointer;
+    }
+
+    &__latest-point {
+        font-size: 16pt;
+        font-weight: bold;
+        padding: 5px 0;
+    }
+
+    &__latest-time {
+        font-size: 8pt;
+        margin-top: -3px;
+    }
+
+    &__diff {
+        float: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 5px;
+    }
+
+    &__series-list {
+        float: left;
+        width: 75%;
+
+        ul {
+            margin:0;
+            padding: 0;
+        }
+    }
+
+    &__series-content {
+        padding-bottom: 12px;
+        padding-top: 3px;
+        width: auto;
+    }
+
+    &__spinner {
+        min-height: 100px;
+        position: absolute;
+        background: #fff;
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .highlight-table-spinner {
+        background: #fff;
+        min-height: 50px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .highlight-table-spinner img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .graph-icon {
+        width: 40px;
+        height: 40px;
+        margin-top: -7px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 7;
+    }
+
+    &__graph-info .graph-icon {
+        margin: -12px 10px 0 0;
+    }
+
+    &__folder-icon {
+        padding: 0px 10px;
+        border-radius: 8px;
+        font-size: 12px;
+        margin-top: 2px;
+        position: absolute;
+        top: 3px;
+        right: 40px;
+    }
+
+    &__glyphicon-title {
+        font-size: 22px !important;
+    }    
+
+    .topic-highlight-significant {
+        float: left;
+        padding: 10px 5px 0 0;
+    } 
+
+    .topic-highlight-diff-content {
+        float: right;
+    }
+
+    .options-section {
+        right: -10px;
+        top: 10px;
+    }
+}

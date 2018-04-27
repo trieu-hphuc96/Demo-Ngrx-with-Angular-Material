@@ -1,0 +1,299 @@
+@import "../mixins/flexbox";
+
+.tm-histogram {
+    .popover-content {
+        padding: 9px 0 9px 5px;
+    }
+    &--compact {
+        .col-xs-2 {
+            padding: 0;
+        }
+    }
+}
+
+.compact-legend-series {
+    padding: 5px;
+    height: 290px;
+    position: relative;
+    padding-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    &__bottom-border {
+        border-bottom: 1px solid #e7e7e7;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &:hover a.chart-arrow {
+        display: block;
+    }
+    &__verticle-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+        div.col-xs-24.text-center {
+            padding-left: 0;
+        }
+    }
+    &__arrow {
+        float: right;
+    }
+    &__arrow-icon {
+        text-decoration: none;
+        color: #888 !important;
+    }
+    &__data-content {
+        float: right !important;
+        p {
+            text-align: center;
+            margin: 0 0 3px;
+        }
+    }
+    &__border-bottom {
+        border-bottom: 1px solid #e7e7e7;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &__content-wrapper {
+        @include flex(1);
+        min-width: 10px;
+        div.col-xs-24.text-center {
+            padding-left: 0;
+        }
+    }
+    &__nav-icon {
+        font-size: 25px;
+        min-width: 25px;
+    }
+    small {
+        font-weight: normal;
+        font-size: 18px;
+    }
+    &--highlight {
+        background: #f5f5f5 !important;
+        td {
+            background: #f5f5f5 !important;
+        }
+    }
+    &--transparent-border {
+        border-color: transparent !important;
+    }
+    &--isDisable {
+        background: #f7f7f7;
+        opacity: 0.4;
+    }   
+    &__line-right {
+        border-right: 1px solid #e7e7e7;
+        height: 290px;
+        top: 0;
+        position: absolute;
+        right: 0;
+    }
+}
+
+.compact-legend-header {
+    text-align: center;
+    padding-left: 0;
+    &__title {
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: 0;
+        padding-left: 3px;
+        margin-top: -3px;
+        overflow: hidden;
+        padding-right: 5px;
+        min-height: 30px;
+    }
+    &__expand-icon {
+        top: 0;
+        right: -20px;
+        text-decoration: none;
+        color: #888 !important;
+        width: 14px;
+        height: 12px;
+        position: absolute;
+        cursor: pointer;
+        @media screen and (max-width: 990px) {
+            margin-top: -10px;
+            top: 5px;
+        }
+    }
+}
+
+.compact-legend-data {
+    &__value-content {
+        margin-top: 5px !important;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    &__warning-icon {
+        left: 33px;
+        cursor: pointer;
+        font-size: 0.6em;
+        left: 80px;
+        z-index: 5;
+        &--half-screen {
+            left: 55px;
+        }
+        @media screen and (max-width: 1245px) {
+            left: 40px;
+            &--half-screen {
+                left: 20px;
+            }
+        }
+    }
+    &__value {
+        display: block;
+        font-weight: normal;
+        font-size: 8pt;
+        position: relative;
+        margin-bottom: 0;
+        margin-top: -3px;
+        color: #a9a9a9;
+    }
+    &__info {
+        font-size: 11px;
+        text-align: center !important;
+        margin: auto !important;
+        min-height: 15px;
+    }
+    &__date-time {
+        font-size: 11px;
+        text-align: center !important;
+        margin: auto !important;
+    }
+    &__aggregate-method {
+        text-transform: capitalize;
+    }
+    &__solid-divider {
+        border: 1px solid;
+        min-width: 62px;
+        max-width: 50%;
+        margin: auto;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+}
+
+.compact-legend-difference {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    font-size: 15px !important;
+    &--decrease {
+        color: red;
+    }
+    &--increase {
+        color: green;
+    }
+}
+
+.compact-legend-previous-data {
+    width: 100%;
+    position: relative;
+    float: left;
+    &__content {
+        display: inline-block;
+        position: relative;
+    }
+    &__value-content {
+        float: left;
+    }
+    &__value {
+        font-size: 15px;
+        line-height: 0.7;
+        margin: 0 0 3px
+    }
+    &__dashed-divider {
+        width: 20%;
+        margin: auto !important;
+        border-top: 2px dashed;
+        min-width: 62px;
+    }
+    &__date-time {
+        min-height: 10px;
+        margin-bottom: 5px !important;
+        font-size: 11px;
+        text-align: center !important;
+        margin: auto !important;
+    }
+}
+
+.compact-legend-significance {
+    margin-right: 10px;
+    position: absolute;
+    left: -20px;
+    &__icon {
+        color: #FFA500;
+        cursor: pointer;
+        font-size: 1.5em;
+        line-height: 35px;
+        &--disable {
+            opacity: .5;
+            color: #ccc;
+        }
+        &--invisible {
+            visibility: hidden;
+        }
+    }
+}
+
+.compact-legend-summary {
+    text-align: center;
+    font-size: 11px;
+    @media screen and (max-width: 1098px) {
+        font-size: 9px;
+    }
+    &__label {
+        text-transform: uppercase;
+        color: #999;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+    label {
+        font-weight: normal;
+    }
+}
+
+.chart-wrapper {
+    .compact-legend-summary {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+.full-screen {
+    .compact-legend-series {
+        padding: 10px 5px 5px;
+        height: 240px;
+        position: relative;
+        &__line-right {
+            border-right: 1px solid #e7e7e7;
+            height: 240px;
+            top: 0;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+.tm-edit {
+    .compact-legend-data {
+        &__warning-icon {
+            left: 33px;
+            &--half-screen {
+                left: 35px !important;
+            }
+            @media screen and (max-width: 1245px) {
+                left: 25px;
+                &--half-screen {
+                    left: 15px;
+                }
+            }
+        }
+    }
+}
